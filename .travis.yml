@@ -22,6 +22,9 @@ before_install:
   # COMPOSER: Install
   - composer install --dev
 
+  # WP-CLI: Install Core
+  - wp core install
+  
   # WP-CLI: Activate Plugins
   - wp plugin activate --all
   
