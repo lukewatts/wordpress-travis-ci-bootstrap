@@ -10,7 +10,7 @@ php:
 services:
   - mysql
   
- before_install:
+before_install:
   # WP-CLI: Install
   - curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
   - chmod +x wp-cli.phar
@@ -18,4 +18,10 @@ services:
   
   # MYSQL: Install test DB
   - mysql -e 'CREATE DATABASE test;'
+
+  # COMPOSER: Install
+  - composer install --dev
+
+  # WP-CLI: Activate Plugins
+  - wp plugin activate --all
   

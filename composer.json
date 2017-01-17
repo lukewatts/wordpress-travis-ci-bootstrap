@@ -1,0 +1,15 @@
+{
+    "name": "lukewatts/wordpress-travis-ci-bootstrap",
+    "description": "Bootstrap for testing WordPress themes and plugins with TravisCI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Watts",
+            "email": "luke@affinity4.ie"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
