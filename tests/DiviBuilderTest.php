@@ -1,9 +1,6 @@
 <?php
-namespace WordPressTravisCI\Test;
 
-use PHPUnit\Framework\TestCase;
-
-class DiviBuilderTest extends TestCase
+class DiviBuilderTest extends PHPUnit_Framework_TestCase
 {
     public function testSomething()
     {
