@@ -23,7 +23,7 @@ before_install:
   - composer install --dev
 
   # WP-CLI: Install Core
-  - wp core install
+  - wp core install --url=127.0.0.1 --title=Test --admin_user=admin --admin_email=luke@affinity4.ie
   
   # WP-CLI: Activate Plugins
   - wp plugin activate --all
